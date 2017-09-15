@@ -1,0 +1,17 @@
+void setup() {
+  Serial.begin(9600);
+  pinMode(8,INPUT);
+  //pinMode(13,OUTPUT);
+
+}
+
+void loop() {
+ int switchVal= digitalRead(8);
+ 
+
+ Serial.write(switchVal);
+ //Serial.println(switchVal);
+
+//println writes characters - the number 1/0 followed \n
+
+}
